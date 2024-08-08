@@ -345,3 +345,39 @@ header .content .desc p{
 .destinations_list p i{
   color: #000;
 }
+
+/* book_a_trip */
+.book_a_trip {
+  display: flex;
+  justify-content: space-between;
+}
+.book_a_trip .content{
+  width: 511px;
+}
+.book_a_trip .pic_of_month{
+  width: 485px;
+}
+.book_a_trip .sec_tt{
+  margin-bottom: 31px;
+}
+.steps li{
+  display: flex;
+  gap:20px;
+}
+.steps .icon{
+  width: 47px;
+  height: 48px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.steps li:nth-child(1) .icon{
+  background: #F0BB1F;
+}
+.steps li:nth-child(2) .icon{
+  background: #F15A2B;
+}
+.steps li:nth-child(3) .icon{
+  background: #006380;
+}
