@@ -350,12 +350,15 @@ header .content .desc p{
 .book_a_trip {
   display: flex;
   justify-content: space-between;
+  background: url('../images/book_bg.svg') right top no-repeat;
 }
 .book_a_trip .content{
   width: 511px;
 }
 .book_a_trip .pic_of_month{
+  margin-top: 80px;
   width: 485px;
+  position: relative;
 }
 .book_a_trip .sec_tt{
   margin-bottom: 31px;
@@ -404,6 +407,7 @@ header .content .desc p{
   padding: 20px 24px 30px;
   border-radius:26px;
   background: var(--white);
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
 }
 .pic_of_month .detail img{
   margin-bottom: 20px;
@@ -454,6 +458,12 @@ header .content .desc p{
   gap:10px;
   align-items: flex-start;
   padding: 20px 25px 22px 18px;  
+  position: absolute;
+  left: 222px;
+  bottom: 52px;
+  border-radius:18px;
+  background: var(--white);
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
 }
 .ongoing h5{
   font-size: 14px;
@@ -472,8 +482,27 @@ header .content .desc p{
   font-size: 14px;
   line-height: 1.24;
   letter-spacing: -0.055em;
+  color: #080809;
+  font-weight: 500;
 }
 .ongoing p .percent{
   color: #8A79DF;
   margin-right: 4px;
+}
+.progress_bar {
+  margin-top: 10px;
+  position: relative;
+  width: 156px;
+  height: 5px;
+  border-radius:2.5px;
+  background: #F5F5F5;
+}
+.progress_bar .bar{
+  position: absolute;
+  width: 73px;
+  background: #8A79DF;
+  border-radius:2.5px;
+  left: 0;
+  top: 0;
+  height: 5px;
 }
