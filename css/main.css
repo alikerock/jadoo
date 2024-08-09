@@ -752,6 +752,7 @@ footer nav dd a{
 .outbound .sns{
   display: flex;
   gap:25px;
+  margin-bottom: 26px;
 }
 .outbound .sns li{
   width: 41px;
@@ -765,4 +766,33 @@ footer nav dd a{
 }
 .outbound .sns li a{
   color: #080809;  
+}
+.outbound .sns li:hover{
+  background: 
+  conic-gradient(from 90deg at 50% 50%,
+  #B8D2F1 0deg,
+  #F289AA 17%,
+  #C68BF0 29%,
+  #D164DA 43%,
+  #C963E8 61%,
+  #BFC2E8 72%,
+  #FFC999 80%,
+  #D0D8C9 88%,
+  #BAD0F1 93%, 
+  #CED8CB 100%, 
+  rgba(255, 255, 255, 0.00) 100%);
+}
+.outbound .sns li:hover a{
+  color: var(--white);
+}
+footer .store{
+  margin-top: 16px;
+  display: flex;
+  gap:7px;
+}
+footer > p{
+  margin-top: 84px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.24;
 }
