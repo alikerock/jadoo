@@ -90,9 +90,11 @@ paginationUp.addEventListener('click',()=>{
 window.addEventListener('scroll',()=>{
   let scrollAmt = window.scrollY;
   if(scrollAmt >= bookATripOST){
-    bookATrip.classList.add('active');
-  }
-  onGoingNumAnimation();
+    if(!bookATrip.classList.contains('active')){
+      bookATrip.classList.add('active');
+      onGoingNumAnimation();
+    }
+  }  
 });
 
 function onGoingNumAnimation(){
@@ -101,6 +103,7 @@ function onGoingNumAnimation(){
   let animation = setInterval(()=>{
     num += 1;
     bar.style.width = num+'%';
+    onGoingPercent.innerHTML = num+'%';
     if(num === targetNum){
       clearInterval(animation);
     }
