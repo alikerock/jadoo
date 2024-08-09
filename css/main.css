@@ -628,11 +628,22 @@ header .content .desc p{
 }
 /* Subscribe */
 .subscribe {
-  background: #DFD7F9;
   border-radius:129px 20px 20px 20px;
   padding: 79px 156px 73px;
   box-sizing: border-box;  
   position: relative;
+  background: 
+     url(../images/subscribe_bg1.svg) left bottom no-repeat,
+     url(../images/subscribe_bg2.svg) right top no-repeat rgba(223,215,249,0.2);
+}
+.subscribe:after{
+  content:'';
+  position: absolute;
+  width: 153px;
+  height: 166px;
+  background: url(../images/subscribe_bg3.svg) no-repeat;
+  right: -99px;
+  bottom: -70px;
 }
 .subscribe h2{
   font-size: 33px;
