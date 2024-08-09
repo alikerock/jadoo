@@ -632,6 +632,7 @@ header .content .desc p{
   border-radius:129px 20px 20px 20px;
   padding: 79px 156px 73px;
   box-sizing: border-box;  
+  position: relative;
 }
 .subscribe h2{
   font-size: 33px;
@@ -656,6 +657,7 @@ header .content .desc p{
   gap:14px;
   border-radius:10px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .subscribe form .field input{
   flex:1;
@@ -673,4 +675,18 @@ header .content .desc p{
   justify-content: center;
   align-items: center;
   border-radius:10px;
+}
+.subscribe .decoration{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius:50%;
+  background: linear-gradient(45deg, #5E3BE1, #747DEF);
+  right: -20px;
+  top: -13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 30px;
 }
