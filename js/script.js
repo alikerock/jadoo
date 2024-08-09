@@ -19,7 +19,13 @@ for(let i = 0; i < pagers.length; i++){
 })
 */
 pagers.forEach((item,idx)=>{
-  item.addEventListener('click',()=>{
-     //모든 a에서 active 제거, 클릭한 그요소만 active 추가
+  item.addEventListener('click',(e)=>{
+    e.preventDefault();
+    for(let pager of pagers){
+      pager.classList.remove('active');
+    }
+    item.classList.add('active');
+    //모든 testimonialsLists에서 active를 제거하고 클릭한 그요소의 인덱스번호에 해당하는 list에 active 추가
+    
   });
 });
